@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultFragment">
+
+    <TextView
+        android:id="@+id/tvResTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/translucent"
+        android:text="Resultados de Formulario"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvResName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre(s):"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/etResName"
+        app:layout_constraintBottom_toBottomOf="@id/etResName"
+        />
+
+
+    <TextView
+        android:id="@+id/tvResApellidoPaterno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellido Paterno:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etResApelldioPaterno"
+        app:layout_constraintBottom_toBottomOf="@id/etResApelldioPaterno"
+        />
+
+    <TextView
+        android:id="@+id/tvResApellidoMaterno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellido Materno:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etResApelldioMaterno"
+        app:layout_constraintBottom_toBottomOf="@id/etResApelldioMaterno"
+        />
+
+    <TextView
+        android:id="@+id/tvResUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario:"
+        app:layout_constraintTop_toTopOf="@+id/etResUsername"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/etResUsername"
+        />
+
+    <TextView
+        android:id="@+id/tvResEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/etResEmail"
+        app:layout_constraintBottom_toBottomOf="@id/etResEmail"
+        />
+
+    <TextView
+        android:id="@+id/tvResGamerTagXbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GameTag Xbox:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/etResGamerTag"
+        app:layout_constraintBottom_toBottomOf="@id/etResGamerTag"
+        />
+
+    <TextView
+        android:id="@+id/tvResPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/etResTextPassword"
+        app:layout_constraintBottom_toBottomOf="@id/etResTextPassword"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etResName"
+        android:ems="12"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/tvResTitle"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginVertical="15dp"
+        android:focusable="false"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etResApelldioPaterno"
+        android:ems="12"
+        android:inputType="text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etResName"
+        android:layout_marginRight="20dp"
+        android:layout_marginVertical="15dp"
+        android:focusable="false"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etResApelldioMaterno"
+        android:ems="12"
+        android:inputType="text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etResApelldioPaterno"
+        android:layout_marginRight="20dp"
+        android:layout_marginVertical="15dp"
+        android:focusable="false"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etResUsername"
+        android:ems="12"
+        android:inputType="text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etResApelldioMaterno"
+        android:layout_marginRight="20dp"
+        android:layout_marginVertical="15dp"
+        android:focusable="false"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etResEmail"
+        android:ems="12"
+        android:inputType="textEmailAddress"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etResUsername"
+        android:layout_marginRight="20dp"
+        android:layout_marginVertical="15dp"
+        android:focusable="false"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etResGamerTag"
+        android:ems="12"
+        android:inputType="text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etResEmail"
+        android:layout_marginRight="20dp"
+        android:layout_marginVertical="15dp"
+        android:focusable="false"
+        />
+
+    <EditText
+        android:id="@+id/etResTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:inputType="textPassword"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etResGamerTag"
+        android:layout_marginRight="20dp"
+        android:layout_marginVertical="15dp"
+        android:focusable="false"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
